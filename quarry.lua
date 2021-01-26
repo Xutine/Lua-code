@@ -57,17 +57,7 @@ do
                 end
             end
         else
-            if(T==1)then
-                if(C == Z)then
-                    print("Level complete!")
-                else
-                    robot.turnRight()
-                    robot.swing()
-                    robot.forward()
-                    robot.turnRight()
-                    T = 0
-                end
-            else
+            if(T==0)then
                 if(C == Z)then
                     print("Level complete!")
                 else
@@ -76,6 +66,16 @@ do
                     robot.forward()
                     robot.turnLeft()
                     T = 1
+                end
+            else
+                if(C == Z)then
+                    print("Level complete!")
+                else
+                    robot.turnRight()
+                    robot.swing()
+                    robot.forward()
+                    robot.turnRight()
+                    T = 0
                 end
             end
         end
