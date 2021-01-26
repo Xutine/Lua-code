@@ -34,27 +34,52 @@ do
             A = A + 1
         end
         
-        if(T==0)then
-            if(C == Z)then
-                print("Level complete!")
+        if(H == 0)then
+            if(T==0)then
+                if(C == Z)then
+                    print("Level complete!")
+                else
+                    robot.turnRight()
+                    robot.swing()
+                    robot.forward()
+                    robot.turnRight()
+                    T = 1
+                end
             else
-                robot.turnRight()
-                robot.swing()
-                robot.forward()
-                robot.turnRight()
-                T = 1
+                if(C == Z)then
+                    print("Level complete!")
+                else
+                    robot.turnLeft()
+                    robot.swing()
+                    robot.forward()
+                    robot.turnLeft()
+                    T = 0
+                end
             end
         else
-            if(C == Z)then
-                print("Level complete!")
+            if(T==1)then
+                if(C == Z)then
+                    print("Level complete!")
+                else
+                    robot.turnRight()
+                    robot.swing()
+                    robot.forward()
+                    robot.turnRight()
+                    T = 0
+                end
             else
-                robot.turnLeft()
-                robot.swing()
-                robot.forward()
-                robot.turnLeft()
-                T = 1
+                if(C == Z)then
+                    print("Level complete!")
+                else
+                    robot.turnLeft()
+                    robot.swing()
+                    robot.forward()
+                    robot.turnLeft()
+                    T = 1
+                end
             end
         end
+        
         C = C + 1
     end
     block2 = robot.detectDown()
