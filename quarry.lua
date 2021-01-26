@@ -23,7 +23,7 @@ do
     while(C < Z)
     do
         A = 0
-        while(A < X)
+        while(A < X-1)
         do
             block = robot.detect()
             if(block == true)then
@@ -69,7 +69,7 @@ do
     robot.turnRight()
     robot.turnRight()
 
-    Y = Y + 1
+    B = B + 1
 end
 
 --not needed kinda just bloat
