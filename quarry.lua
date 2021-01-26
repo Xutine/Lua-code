@@ -35,49 +35,25 @@ do
             A = A + 1
         end
         
-        if(H == 0)then
-            if(T==0)then
-                if(C == Z-1)then
-                    print("Level complete!")
-                else
-                    robot.turnRight()
-                    robot.swing()
-                    robot.forward()
-                    robot.turnRight()
-                    T = 1
-                end
+        if(T==0)then
+            if(C == Z-1)then
+                print("Level complete!")
             else
-                if(C == Z-1)then
-                    print("Level complete!")
-                else
-                    robot.turnLeft()
-                    robot.swing()
-                    robot.forward()
-                    robot.turnLeft()
-                    T = 0
-                end
+                robot.turnRight()
+                robot.swing()
+                robot.forward()
+                robot.turnRight()
+                T = 1
             end
         else
-            if(T==0)then
-                if(C == Z-1)then
-                    print("Level complete!")
-                else
-                    robot.turnLeft()
-                    robot.swing()
-                    robot.forward()
-                    robot.turnLeft()
-                    T = 1
-                end
+            if(C == Z-1)then
+                print("Level complete!")
             else
-                if(C == Z-1)then
-                    print("Level complete!")
-                else
-                    robot.turnRight()
-                    robot.swing()
-                    robot.forward()
-                    robot.turnRight()
-                    T = 0
-                end
+                robot.turnLeft()
+                robot.swing()
+                robot.forward()
+                robot.turnLeft()
+                T = 0
             end
         end
         
@@ -92,11 +68,6 @@ do
     end
     robot.turnRight()
     robot.turnRight()
-    if(H == 0)then
-        H = 1
-    else
-        H = 0
-    end
 
     Y = Y + 1
 end
