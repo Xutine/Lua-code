@@ -23,18 +23,21 @@ do
     do
         A = 0
         while(A < X)
-            Block1 = robot.detect()
-            if(block1 == true)then
+        do
+            block = robot.detect()
+            if(block == true)then
                 robot.swing()
                 robot.forward()
+                A = A + 1
             else
                 robot.forward()
+                A = A + 1
             end
             C = C + 1
         end
         
         if(T==0)then
-            if(C == Z)
+            if(C == Z)then
                 print("Level complete!")
             else
                 robot.turnRight()
@@ -44,7 +47,7 @@ do
                 T = 1
             end
         else
-            if(C == Z)
+            if(C == Z)then
                 print("Level complete!")
             else
                 robot.turnLeft()
