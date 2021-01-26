@@ -14,6 +14,7 @@ X = tonumber(X1)
 Y = tonumber(Y1)
 Z = tonumber(Z1)
 
+H = 0
 B = 0
 T = 1
 while(B < Y)
@@ -89,6 +90,12 @@ do
     else
         robot.down()
     end
+    if(H = 0)then
+        H = 1
+    else
+        H = 0
+    end
+
     Y = Y + 1
 end
 
