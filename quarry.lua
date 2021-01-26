@@ -37,7 +37,7 @@ do
         
         if(H == 0)then
             if(T==0)then
-                if(C == Z)then
+                if(C == Z-1)then
                     print("Level complete!")
                 else
                     robot.turnRight()
@@ -47,7 +47,7 @@ do
                     T = 1
                 end
             else
-                if(C == Z)then
+                if(C == Z-1)then
                     print("Level complete!")
                 else
                     robot.turnLeft()
@@ -59,7 +59,7 @@ do
             end
         else
             if(T==0)then
-                if(C == Z)then
+                if(C == Z-1)then
                     print("Level complete!")
                 else
                     robot.turnLeft()
@@ -69,7 +69,7 @@ do
                     T = 1
                 end
             else
-                if(C == Z)then
+                if(C == Z-1)then
                     print("Level complete!")
                 else
                     robot.turnRight()
