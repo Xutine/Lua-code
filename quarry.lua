@@ -90,6 +90,8 @@ do
     else
         robot.down()
     end
+    robot.turnRight()
+    robot.turnRight()
     if(H == 0)then
         H = 1
     else
