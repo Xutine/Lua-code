@@ -90,7 +90,7 @@ do
     else
         robot.down()
     end
-    if(H = 0)then
+    if(H == 0)then
         H = 1
     else
         H = 0
