@@ -28,12 +28,10 @@ do
             if(block == true)then
                 robot.swing()
                 robot.forward()
-                A = A + 1
             else
                 robot.forward()
-                A = A + 1
             end
-            C = C + 1
+            A = A + 1
         end
         
         if(T==0)then
@@ -57,6 +55,7 @@ do
                 T = 1
             end
         end
+        C = C + 1
     end
     block2 = robot.detectDown()
     if(block2 == true)then
