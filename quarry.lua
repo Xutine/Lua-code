@@ -23,8 +23,8 @@ do
     do
         A = 0
         while(A < X)
-            block = robot.detect()
-            if(block == true)then
+            Block1 = robot.detect()
+            if(block1 == true)then
                 robot.swing()
                 robot.forward()
             else
